@@ -1,12 +1,17 @@
 import React from 'react'
-import Rutas from '../Core/Rutas'
+
+
 import '../Pages/Home'
+import Navega from '../Core/Navega'
 
 const Home = () => {
   return (
-    <div className='home'>
-    <Rutas/>
+    <div className="fondo-home">
+      <span>GAMES OF THRONES</span>
+      <Navega></Navega>
+      
     </div>
+
   )
 }
 
