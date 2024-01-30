@@ -1,24 +1,15 @@
-import './App.css';
-import Rutas from './Components/Core/Rutas';
-import Home from './Components/Pages/Home';
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Rutas from "./Components/Core/Rutas";
 
 
 function App() {
   return (
-   
-      <div className='background-image'>
-      <div  className="background.image">
-      <Home> 
-
-      <Rutas/>
-      </Home>
-    
-
-      
-             
-         
-      </div>
-      </div>
+    <div className="background-image">
+      <BrowserRouter>
+        <Rutas />
+      </BrowserRouter>
+    </div>
   );
 }
 

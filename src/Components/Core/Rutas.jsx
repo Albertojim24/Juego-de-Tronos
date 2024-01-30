@@ -1,26 +1,22 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Navega from './Navega';
-import Characters from '../Pages/Characters';
-import Houses from '../Pages/Houses';
-import Cronologia from '../Pages/Cronologia';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
+import Characters from "../Pages/Characters";
+import Houses from "../Pages/Houses";
+import Cronologia from "../Pages/Cronologia";
+import Home from "../Pages/Home";
 
 const Rutas = () => {
   return (
     <div>
-    <BrowserRouter>
-    <Navega/>
-    <Routes>
-
-  <Route  path='/Characters' element={<Characters/>} />
-  <Route path='/Houses' element={<Houses/>}/>
-  <Route path='/Cronologia' element={<Cronologia/>}/>
-</Routes>
-</BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Characters" element={<Characters />} />
+        <Route path="/Houses" element={<Houses />} />
+        <Route path="/Cronologia" element={<Cronologia />} />
+      </Routes>
     </div>
+  );
+};
 
-  )
-}
-
-export default Rutas
+export default Rutas;
