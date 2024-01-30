@@ -7,6 +7,7 @@ function App() {
   return (
    
       <div className='background-image'>
+        <h1>GameOfThrone</h1>
       <div  className="background.image">
       <Home> 
 
