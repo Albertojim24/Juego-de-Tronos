@@ -5,7 +5,10 @@ import {Link} from 'react-router-dom';
 const Navega = () => {
   return (
     <>
-<ul>
+<ul className='text-container'>
+<li>
+    <Link to="/">INICIO</Link>
+  </li>
   <li>
     <Link to="/Characters">Characters</Link>
   </li>
