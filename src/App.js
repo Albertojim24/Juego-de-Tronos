@@ -7,7 +7,7 @@ function App() {
   return (
    
       <div className='background-image'>
-      <div  className="background.image">
+      <div  className="background-image">
       <Home> 
 
       <Rutas/>
