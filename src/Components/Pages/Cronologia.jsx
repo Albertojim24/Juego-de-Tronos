@@ -19,8 +19,12 @@ const Cronologia = () => {
 
     <div>
 
+
       <h1>BIENVENIDO A CRONOLOGIA</h1>
       {cronologias && <Timeline_cronologia cronologias={cronologias}></Timeline_cronologia>}
+
+      <h1>BIENVENIDO A CRONOLOGIA </h1>
+
       <Navega></Navega>
     </div>
   )
