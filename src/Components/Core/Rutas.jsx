@@ -11,9 +11,9 @@ const Rutas = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Characters" element={<Characters />} />
-        <Route path="/Houses" element={<Houses />} />
-        <Route path="/Cronologia" element={<Cronologia />} />
+        <Route path="/personajes" element={<Characters />} />
+        <Route path="/casas" element={<Houses />} />
+        <Route path="/cronologia1" element={<Cronologia />} />
       </Routes>
     </div>
   );
