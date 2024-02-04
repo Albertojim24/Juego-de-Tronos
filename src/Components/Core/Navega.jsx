@@ -17,7 +17,7 @@ const Navega = () => {
     <Link to="/casas">CASAS</Link>
   </li>
   <li>
-    <Link to="/cronologia1">CRONOLOGIA</Link>
+    <Link to="/Cronologia1">CRONOLOGIA</Link>
 
   </li>
 </ul>

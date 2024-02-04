@@ -17,7 +17,7 @@ const Characters = () => {
   useEffect(()=>{
     const fetchCharacters= async()=>{
       try{
-        const response = await axios.get("https://game-of-thrones-json-server.vercel.app/character`")
+        const response = await axios.get("http://localhost:3000/characters")
         console.log(response)
         setCharacters(response.data)
     }catch(error){

@@ -23,7 +23,7 @@
         transform: translateY(-25%);
         color: white;
     }}
-    .all-images{
+    /* .all-images{
         display: flex;
         flex-wrap: wrap;
         object-fit: cover;
@@ -62,3 +62,29 @@
         visibility: visible;
       }
     
+       */
+
+    
+    
+    .all-images {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    
+    .image-div {
+        display: flex;
+        text-align: center;
+        flex-basis: calc(30% - 40px);
+        margin: 20px;
+        flex-direction: column;
+    }
+    .image-character{
+    width: 70%;
+    height: 90%;
+    };
+    
+    .houseType { 
+        text-align: center;
+    }
