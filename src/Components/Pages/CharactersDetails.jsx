@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CharactersDetails = () => {
+  
   return (
     <div>
       
