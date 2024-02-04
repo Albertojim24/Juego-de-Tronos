@@ -113,6 +113,39 @@
 .circulo_contenedor {
   background-color: black;
   
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circulo_numero {
+  left: -35px;
+  position: relative;
+  background-color: transparent;
+  border: 2px solid white;
+  width: 50px; /* ajusta el tamaño según tus necesidades */
+  height: 50px; /* ajusta el tamaño según tus necesidades */
+  border-radius: 50%; /* hace que el div sea un círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* color del texto */
+  font-size: 24px; /* tamaño del texto */
+}
+.flecha_contenedor {
+  background-color: black; /* Fondo negro */
+}
+
+.flecha_imagen_abajo,
+.flecha_imagen_arriba {
+  display: flex;
+    left: -36px;
+    color: white;
+    position: relative;
+    justify-content: center;
 
 
 }
+
