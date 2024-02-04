@@ -10,13 +10,15 @@ const Navega = () => {
     <Link to="/">INICIO</Link>
   </li>
   <li>
-    <Link to="/Characters">Personajes</Link>
+
+    <Link to="/personajes">PERSONAJES</Link>
   </li>
   <li>
-    <Link to="/Casas">Houses</Link>
+    <Link to="/casas">CASAS</Link>
   </li>
   <li>
-    <Link to="/Cronologia1">Cronology</Link>
+    <Link to="/cronologia1">CRONOLOGIA</Link>
+
   </li>
 </ul>
     </>
