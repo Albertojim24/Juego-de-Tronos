@@ -1,6 +1,12 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('../public/Game_of_Thrones.ttf') format('truetype');
+}
 body {
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-weight: 400;inicio */ 
+  font-family: 'MiFuente', sans-serif,
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
