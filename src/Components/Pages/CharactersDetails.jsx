@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 
 const CharactersDetails = () => {
+
   const [character, setCharacter] = useState([]);
   const [houses, setHouses] = useState([]);
   const { id } = useParams();
@@ -17,6 +18,7 @@ const CharactersDetails = () => {
         const housesApi = await fetch(`https://game-of-thrones-json-server.vercel.app/characters/${characterJson.house}`);
         const housesJson = await housesApi.json();
         setHouses(housesJson[0]);
+
       
 
     };

@@ -6,6 +6,9 @@ import './Characters.css'
 import { Link } from 'react-router-dom';
 
 
+
+
+
 const Characters = () => {
   const[characters, setCharacters]= useState([]);
   const[selectedCharacter, setSelectedCharacter]= useState(null);
@@ -14,7 +17,7 @@ const Characters = () => {
   useEffect(()=>{
     const fetchCharacters= async()=>{
       try{
-        const response = await axios.get("https://game-of-thrones-json-server.vercel.app/characters")
+        const response = await axios.get("https://game-of-thrones-json-server.vercel.app/character`")
         console.log(response)
         setCharacters(response.data)
     }catch(error){
