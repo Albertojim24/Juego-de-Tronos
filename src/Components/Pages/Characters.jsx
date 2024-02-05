@@ -2,11 +2,8 @@ import Navega from '../Core/Navega'
 import React, {useState, useEffect } from "react";
 import axios from 'axios';
 import CharactersDetails from './CharactersDetails';
-import './Characters.css'
+import './Characters.css';
 import { Link } from 'react-router-dom';
-
-
-
 
 
 const Characters = () => {
@@ -17,7 +14,7 @@ const Characters = () => {
   useEffect(()=>{
     const fetchCharacters= async()=>{
       try{
-        const response = await axios.get("http://localhost:3000/characters")
+        const response = await axios.get("https://game-of-thrones-json-server.vercel.app/characters")
         console.log(response)
         setCharacters(response.data)
     }catch(error){
@@ -34,29 +31,31 @@ const handleCharacterClick=(character)=>{
 const filteredCharacter= characters.filter((character)=>
 character.name.toLowerCase().includes(searchTerm.toLowerCase())
 )
-const handleSearchChange=()=>{
-console.log("hola")}
+const handleSearchChange=(event)=>{
+  setSearchTerm(event.target.value);
+}
 
 
   return (
     <div className='background'>
       <h1>BIENVENIDO A CHARACTERES</h1>
       <Navega></Navega>
-      <div className='search-bar'>
+      <div className='lupaybuscador'>
       <img className='lupa' src='https://baam.es/Imagenes/buscar.png' alt='lupa'/>
     <input type='text'
     placeholder='Buscar personaje'
-    className='form-control'
+    className='buscador'
     value={searchTerm}
     onChange={handleSearchChange}/>
      </div>
 
-      <div className='all-images'>
+      <div className='conjunto-images'>
         {filteredCharacter.map((character)=>(
-          <div  className="imagen-div" key={character.id}  >
+          <div className='all-images' key={character.id}  >
           
           <Link to = {`/personajes/${character.id}`}>
-            <img classname="image-character" src={character.image} alt='/' onClick={()=>handleCharacterClick()}/>
+            <img className='personaje' src={character.image} alt='/' onClick={()=>handleCharacterClick()}/>
+            <h4>{character.name}</h4>
             </Link>
 
             <div className='hover'>
