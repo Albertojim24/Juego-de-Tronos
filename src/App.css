@@ -63,11 +63,9 @@
 
 .crono_age {
   color: #fefefe; /* Color de texto más suave para la edad */
-}
-.crono_image {
   position: relative;
 }
-.crono_image img {
+.crono_image {
   width: 100px; /* Ancho fijo para todas las imágenes */
   height: 100px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Ajusta la imagen para cubrir el área del círculo sin distorsión */
@@ -112,7 +110,4 @@
 
 .circulo_contenedor {
   background-color: black;
-  
-
-
 }
