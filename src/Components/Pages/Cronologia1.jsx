@@ -61,6 +61,11 @@ setEdadMostrada(edadMostradaCalculada === 0 ? "20" : edadMostradaCalculada); //o
         <div className="circulo_numero" onClick={ordenarAge}>{edadMostrada}</div>} mas facil de pensar*/}
   return (
     <>
+    <div className="cronologia_contendor_general">
+    <div className="navega_cronologia">
+      <Navega />
+    </div>
+    
     <div className="circulo_contenedor">
   {edadMostrada !== "0" && (
     <div className="circulo_numero" onClick={ordenarAge}>
@@ -96,7 +101,8 @@ setEdadMostrada(edadMostradaCalculada === 0 ? "20" : edadMostradaCalculada); //o
     </div>
         ))}
       </div>
-      <Navega />
+      </div>
     </>
+    
   );
 }
