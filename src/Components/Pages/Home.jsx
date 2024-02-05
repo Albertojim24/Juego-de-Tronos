@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
 
-
-import '../Pages/Home'
-import Navega from '../Core/Navega'
+import "../Pages/Home";
+import Navega from "../Core/Navega";
 
 const Home = () => {
   return (
     <div className="fondo-home">
-      <span>GAMES OF THRONES</span>
-      <Navega></Navega>
-      
+      <div className="span">
+        <span className="titulo-texto">GAMES OF THRONES</span>
+      </div>
+
+      <div className="nav-home">
+        <Navega />
+      </div>
     </div>
-
-  )
-}
-
-export default Home
+  );
+};
+export default Home;

@@ -37,7 +37,7 @@ const Houses = () => {
       <div className='houses'>
         {houses.map ((house,index) => (
           <div key = {index} className='houses-object'> 
-            <Link to = {`/houses/${houses.id}`}>
+            <Link to = {`/houses/${house.id}`}>
             <img className='houseImage' src={house.image} alt='imagen no encontrada' onClick={() => handleHouseClick ()}></img>
             <h3 className='houseType'> {house.name}</h3> </Link>
             

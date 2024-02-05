@@ -1,3 +1,6 @@
+
+
+import "./Cronologia1"
 import Navega from "../Core/Navega";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -49,16 +52,21 @@ setOrdenAscendente(!ordenAscendente); // Cambiamos el estado para cambiar el ord
 
 //SINO USO FILTRO00
 
-    const edadMostradaCalculada = ordenAscendente ? Math.min(...edades) : Math.max(...edades);
-  setEdadMostrada(edadMostradaCalculada);
+const edadMostradaCalculada = ordenAscendente ? Math.min(...edades) : Math.max(...edades);
+setEdadMostrada(edadMostradaCalculada === 0 ? "20" : edadMostradaCalculada); //obligo que mi arary sea 20 asi no me da 0
 
 };
-
+ {/* condicional sin filtromas dificil.... de pensar */}
+        {/* condicional si usas filtro  {ordenAscendente.age>15&& 
+        <div className="circulo_numero" onClick={ordenarAge}>{edadMostrada}</div>} mas facil de pensar*/}
   return (
     <>
+    <div className="cronologia_contendor_general">
+    <div className="navega_cronologia">
+      <Navega />
+    </div>
+    
     <div className="circulo_contenedor">
-        {/* condicional sin filtromas dificil.... de pensar */}
-        {/* condicional si usas filtro  {ordenAscendente.age>15&& <div className="circulo_numero" onClick={ordenarAge}>{edadMostrada}</div>} mas facil de pensar*/}
   {edadMostrada !== "0" && (
     <div className="circulo_numero" onClick={ordenarAge}>
       {edadMostrada}
@@ -84,7 +92,7 @@ setOrdenAscendente(!ordenAscendente); // Cambiamos el estado para cambiar el ord
             <div className="crono_name">{cronologia1.name}</div>
             <div className="crono_age">{cronologia1.age}</div>
           </div>
-          <img src={cronologia1.image} alt="foto_cronologia" />
+          <img className="imagen_cronologia1" src={cronologia1.image} alt="foto_cronologia" />
         </div>
         {index !== cronologias1.length - 1 && (
           <div className="linea"></div>
@@ -93,7 +101,8 @@ setOrdenAscendente(!ordenAscendente); // Cambiamos el estado para cambiar el ord
     </div>
         ))}
       </div>
-      <Navega />
+      </div>
     </>
+    
   );
 }

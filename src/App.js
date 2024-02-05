@@ -5,6 +5,7 @@ import Characters from "./Components/Pages/Characters";
 import CharactersDetails from "./Components/Pages/CharactersDetails";
 import Cronologia1 from "./Components/Pages/Cronologia1";
 import Houses from "./Components/Pages/Houses";
+import DetailsHouses from "./Components/Pages/DetailsHouses";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
 
         <Route path="/personajes" element={<Characters />} />
-        <Route path="/casas" element={<Houses />} />
+        <Route path="/houses" element={<Houses />} />
+        <Route path="/houses/:id" element={<DetailsHouses/>} />
         <Route path="/Cronologia1" element={<Cronologia1 />} />
         </Routes>
       </BrowserRouter>
